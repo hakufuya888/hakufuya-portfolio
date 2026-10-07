@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080a" />
+  <meta name="portfolio-version" content="20260922-content-growth" />
+  <title>赵怡博 — Interdisciplinary Designer</title>
+  <meta name="description" content="赵怡博的 IP、UX、AI、游戏与视觉设计作品集。" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2307080a'/%3E%3Cpath d='M14 14h36v36H14z' fill='none' stroke='%2300e5ff' stroke-width='3'/%3E%3Cpath d='M22 22h20v20H22z' fill='none' stroke='%23ff5c35' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23f5f7ff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=20260922-content-growth" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+  <header class="nav-shell">
+    <a class="brand" href="#top" aria-label="返回顶部"><span>ZYB</span><i></i><em>PORTFOLIO</em></a>
+    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+    <nav id="main-nav"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#honors">HONORS</a><a href="#contact">CONTACT</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-meta"><span>01 / AVAILABLE FOR 2027</span><span>GUANGZHOU · CN</span></div>
+      <p class="eyebrow">个人作品集 · INTERDISCIPLINARY DESIGNER</p>
+      <h1><span>ZHAO</span><span class="shift">YIBO<sup>®</sup></span></h1>
+      <div class="hero-bottom">
+        <p class="intro">赵怡博，动画专业游戏开发方向。<br>用 <b>AI × Design × Play</b> 构建可被感知的视觉叙事与产品体验。</p>
+        <div class="role-list"><span>IP DESIGNER</span><span>UX / AGENT DESIGNER</span><span>AI GAME &amp; PRODUCT</span><span>FDE ENGINEER</span></div>
+      </div>
+      <div class="scan-mark">⌁<br>SCAN TO EXPLORE</div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-head"><p>SELECTED ARCHIVES</p><h2>作品<br><i>目录</i></h2><span>05 PROJECTS / 2024—26</span></div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label">02 / ABOUT</div>
+      <div class="about-copy"><p>从角色世界观到可玩的场景，从品牌传播到 AI 工作流——我关注每一次创意如何变成一个能被人真实体验的系统。</p><p class="mono">ANIMATION / GAME DEVELOPMENT<br>2027 GRADUATE · GUANGZHOU</p></div>
+      <div class="metrics"><div><b>10+</b><span>ORIGINAL<br>CHARACTERS</span></div><div><b>40+</b><span>VISUAL<br>DELIVERABLES</span></div><div><b>30+</b><span>CONTENT<br>PROJECTS</span></div></div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-label">03 / CAPABILITY MATRIX</div>
+      <div class="skill-layout"><h2>我的工具<br>不是边界<span>.</span></h2><div class="skill-groups"><article><small>01 / CHARACTER &amp; IP</small><p>Photoshop · Procreate · SAI<br>角色三视图 / 世界观 / 表情系统</p></article><article><small>02 / AI &amp; 3D</small><p>ChatGPT · Midjourney · Gemini · 即梦 AI<br>Maya · Blender · ZBrush · Substance Painter</p></article><article><small>03 / EXPERIENCE &amp; PLAY</small><p>Unity · UE5 · Figma · AI Workflow<br>UX Design / Game Planning / Visual System</p></article><article><small>04 / VISUAL COMMUNICATION</small><p>Illustrator · After Effects · 剪映<br>KV / Packaging / Campaign / Motion</p></article></div></div>
+    </section>
+
+    <section class="honors section" id="honors">
+      <div class="section-label">04 / SIGNAL RECEIVED</div>
+      <h2>荣誉记录</h2>
+      <ul><li><span>2025</span><b>丽江文创人才大赛 · 市级三等奖</b><em>IP / COMMERCIALIZATION</em></li><li><span>2025</span><b>青少年乡村振兴知识科普暨短视频大赛 · 一等奖</b><em>CONTENT</em></li><li><span>2024</span><b>“华夏杯”全民国学经典大会 · 一等奖</b><em>CULTURE</em></li><li><span>2024</span><b>大学生生态环境修复与科普竞赛 · 一等奖</b><em>PUBLIC DESIGN</em></li></ul>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><p class="eyebrow">05 / LET'S MAKE SOMETHING UNEXPECTED</p><h2>开始<br><i>连接</i></h2></div>
+      <button class="wechat" id="wechat-copy"><span>WECHAT</span><strong>Hakufuya</strong><em>CLICK TO COPY ↗</em></button>
+      <p class="contact-foot">© 2026 ZHAO YIBO / DESIGNED IN GUANGZHOU</p>
+    </section>
+  </main>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="关闭项目详情">×</button><div id="dialog-content"></div></dialog>
+  <dialog id="image-viewer" class="image-viewer" aria-label="图片预览"><button class="close-viewer" aria-label="关闭图片预览">×</button><button class="viewer-step viewer-prev" aria-label="上一张图片">←</button><img id="viewer-image" alt="作品预览" /><button class="viewer-step viewer-next" aria-label="下一张图片">→</button><p id="viewer-count" class="viewer-count" aria-live="polite"></p></dialog>
+  <div class="toast" role="status" aria-live="polite">WECHAT ID COPIED</div>
+  <script src="app.js?v=20260922-content-growth"></script>
+</body>
+</html>
